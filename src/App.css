@@ -7,6 +7,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -86,4 +87,54 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: column; /* Stack navigation items */
+    align-items: flex-start; /* Align items to the left */
+    padding: 1rem 0; /* Add padding for better spacing */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation links */
+    gap: 1rem; /* Space between links */
+    width: 100%; /* Full width for links */
+  }
+
+  .hero {
+    flex-direction: column; /* Stack hero content vertically */
+    height: auto; /* Allow height to adjust */
+    padding: 2rem 1rem; /* Add padding for smaller screens */
+  }
+
+  .hero-content {
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text */
+    margin-bottom: 2rem; /* Add margin below hero content */
+  }
+
+  .hero h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    line-height: 3.5rem; /* Adjust line height */
+    margin-bottom: 1rem; /* Add margin below heading */
+  }
+
+  .hero p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    max-width: 100%; /* Allow full width for text */
+    margin: 0 0 1rem 0; /* Add margin below paragraph */
+  }
+
+  .hero-btn {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem; /* Space between buttons */
+    width: 100%; /* Full width for buttons */
+  }
+
+  .brand-icons {
+    justify-content: center; /* Center brand icons */
+    margin-top: 1rem; /* Add margin above brand icons */
+  }
 }
