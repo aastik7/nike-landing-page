@@ -58,6 +58,7 @@ nav ul {
   font-weight: 600;
   font-size: 1rem;
   color: var(--grey);
+  max-width: 400px;
 }
 
 .hero-btn {
@@ -69,4 +70,20 @@ nav ul {
   background: transparent;
   border: 1px solid gray;
   color: var(--grey);
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.brand-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
 }
