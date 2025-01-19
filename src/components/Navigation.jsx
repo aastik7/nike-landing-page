@@ -1,9 +1,11 @@
+import brandLogo from "./Images/brand_logo.png";
+
 const Navigation = () => {
   return (
     <div>
       <nav className="container">
         <div className="logo">
-          <img src="/images/brand_logo.png" alt="brand logo" />
+          <img src={brandLogo} alt="brand logo" />
         </div>
 
         <ul>
