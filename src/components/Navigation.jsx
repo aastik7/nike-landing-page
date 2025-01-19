@@ -1,4 +1,4 @@
-import brandLogo from "./Images/brand_logo.png";
+import brandLogo from "/images/brand_logo.png";
 
 const Navigation = () => {
   return (
