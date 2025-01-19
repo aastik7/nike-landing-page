@@ -1,3 +1,7 @@
+import flipkartLogo from "/images/flipkart.png";
+import amazonLogo from "/images/amazon.png";
+import shoeImage from "/images/shoe_image.png";
+
 const Hero = () => {
   return (
     <main className="hero container">
@@ -17,13 +21,13 @@ const Hero = () => {
         <div className="shopping">
           <p>Also Available On</p>
           <div className="brand-icons">
-            <img src="./images/amazon.png" alt="amazon-logo" />
-            <img src="/images/flipkart.png" alt="flipkart-logo" />
+            <img src={amazonLogo} alt="amazon-logo" />
+            <img src={flipkartLogo} alt="flipkart-logo" />
           </div>
         </div>
       </div>
       <div className="hero-imgage">
-        <img src="/images/shoe_image.png" alt="hero-image" />
+        <img src={shoeImage} alt="hero-image" />
       </div>
     </main>
   );
